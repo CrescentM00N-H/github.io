@@ -1,0 +1,36 @@
+{
+  "events":
+  [
+    {
+      "title": "Fundraiser Gala",
+      "description": "Assist at a fundraiser",
+      "date": "2025-02-05",
+      "category": "fundraisers"
+    },
+    { "title": "Community Cleanup",
+      "description": "Help cleanup around the community",
+      "date": "2025-02-12",
+      "category": "cleanups"
+    },
+    { "title": "Coding Workshop",
+      "description": "Teach people the basics of coding",
+      "date": "2025-02-19",
+      "category": "workshops"
+    },
+    { "title": "Charity Run",
+      "description": "Go on a community hosted run to raise money for charity",
+      "date": "2025-02-26",
+      "category": "fundraisers"
+    },
+    { "title": "Beach Cleanup",
+      "description": "Help cleanup around the beach",
+      "date": "2025-02-03",
+      "category": "cleanups"
+    },
+    { "title": "Art Workshop",
+      "description": "Help teach at an ark workshop",
+      "date": "2025-02-10",
+      "category": "workshops"
+    }
+  ]
+}

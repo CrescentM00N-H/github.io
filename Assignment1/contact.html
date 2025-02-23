@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact</title>
+
+  <!-- CSS section -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="./content/app.css">
+
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><i class="fa-solid fa-handshake-angle"></i> Volunteer Connect</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html"><i class="fa-solid fa-house"></i> Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./opportunities.html"><i class="fa-solid fa-person-arrow-up-from-line"></i> Opportunities</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./events.html"><i class="fa-solid fa-calendar-days"></i> Events</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./contact.html"><i class="fa-solid fa-address-book"></i>Contact</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+  <h1 class="mb-5">Contact us</h1>
+  <form class="col-lg-6 col-md-10 col-sm-12 mb-4">
+
+    <div class="mb-3">
+      <label for="fullName" class="form-label">Full Name</label>
+      <input id="fullName" name="fullName" type="text" class="form-control"
+             aria-describedby="Full Name" aria-label="Full Name" required>
+    </div>
+
+
+    <div class="mb-3">
+      <label for="emailAddress" class="form-label">Email address</label>
+      <input id="emailAddress" name="emailAddress" type="email" class="form-control"
+             aria-describedby="Email Address" aria-label="Email Address" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="subject" class="form-label">Subject:</label>
+      <input id="subject" name="subject" type="Text" class="form-control"
+             aria-describedby="subject" aria-label="subject" required>
+    </div>
+
+
+
+    <div class="input-group mb-3">
+      <label class="input-group-text">Your Message: </label>
+      <textarea aria-describedby="Message area" ARIA-LABEL="Message Area"></textarea>
+    </div>
+
+    <div class="mb-3 input-group">
+      <input type="checkbox" name="subscribeCheckbox" class="form-check-input me-2" id="subscribeCheckbox">
+      <label class="form-check-label" for="subscribeCheckbox"> Sub to our contact list </label>
+    </div>
+    <button id="Sendbtn" class="btn btn-primary"><i class="fa-solid fa-envelope"></i> Submit</button>
+    <button id="Cancelbtn" class="btn btn-primary"> <i class="fa-solid fa-x"></i> Cancel</button>
+  </form>
+
+  <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="formModalLabel">Submission Confirmation</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Submission Confirmed
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</main>
+
+
+<!-- Scripting Section -->
+<script src="./scripts/app.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+
+    <!-- CSS section -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./content/app.css">
+
+</head>
+<body>
+<header>
+</header>
+
+<main class="container">
+    <h1 class="mb-5">
+        Welcome to Volunteer Connect <br>
+
+
+        <button id="getInvolvedBtn" class="btn btn-primary" href="opportunities.html">Get Involved</button>
+    </h1>
+</main>
+
+<div id="carousel" class="carousel slide"  data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./resources/ocean-cleanup-beach-with-birds.jpg" class="d-block w-100" alt="A man is cleaing up trash on ther beach with bird">
+        </div>
+        <div class="carousel-item">
+            <img src="./resources/TrashCollecting.jpeg" class="d-block w-100" alt="People are clearing trash from a park">
+        </div>
+        <div class="carousel-item">
+            <img src="./resources/WallPainting.jpg" class="d-block w-100" alt="people are painting a wall">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+
+<!-- Scripting Section -->
+ <script src="./scripts/app.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events</title>
+
+    <!-- CSS section -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./content/events.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-handshake-angle"></i> Volunteer Connect</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html"><i class="fa-solid fa-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./opportunities.html"><i class="fa-solid fa-person-arrow-up-from-line"></i> Opportunities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./events.html"><i class="fa-solid fa-calendar-days"></i> Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html"><i class="fa-solid fa-address-book"></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="container">
+    <h1 class="mb-5">
+        Welcome to Volunteer Connect <br>
+        <button id="getInvolved" class="btn btn-primary">Get Involved</button>
+    </h1>
+
+    <div class="mb-3">
+        <label for="eventCategory" class="form-label">Filter by Category</label>
+        <select class="form-select" id="eventCategory">
+            <option value="all">All</option>
+            <option value="fundraisers">Fundraisers</option>
+            <option value="workshops">Workshops</option>
+            <option value="cleanups">Cleanups</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="eventTitle" class="form-label">Event Title</label>
+        <input type="text" class="form-control" id="eventTitle" placeholder="Enter event title">
+    </div>
+    <div class="mb-3">
+        <label for="eventDate" class="form-label">Event Date</label>
+        <input type="date" class="form-control" id="eventDate">
+    </div>
+    <div class="mb-3">
+        <label for="eventCategoryInput" class="form-label">Event Category</label>
+        <select class="form-select" id="eventCategoryInput">
+            <option value="fundraisers" >Fundraisers</option>
+            <option value="workshops">Workshops</option>
+            <option value="cleanups">Cleanups</option>
+        </select>
+    </div>
+    <button id="addEventBtn" class="btn btn-primary mb-3">Add Event</button>
+
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Month of February</th>
+
+        </tr>
+        </thead>
+        <tbody id="calendar">
+
+        </tbody>
+    </table>
+</main>
+
+<!-- Scripting Section -->
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./scripts/app.js"></script>
+</body>
+</html>

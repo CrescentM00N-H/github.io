@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Opportunities</title>
+
+  <!-- CSS section -->
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="./content/app.css">
+
+</head>
+<body>
+<header>
+</header>
+
+<main class="container">
+  <h1 class="mb-5">
+    View available opportunities. <br>
+  </h1>
+  <table class="table" id="opportunities">
+    <tbody id="opportunitiesBody">
+
+    </tbody>
+  </table>
+</main>
+
+
+<!-- Modal -->
+<div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="formModalLabel">Registration Form</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="col-lg-6 col-md-10 col-sm-12 mb-4">
+
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input id="fullName" name="fullName" type="text" class="form-control"
+                   aria-describedby="Full Name" aria-label="Full Name" required>
+          </div>
+
+
+          <div class="mb-3">
+            <label for="emailAddress" class="form-label">Email address</label>
+            <input id="emailAddress" name="emailAddress" type="email" class="form-control"
+                   aria-describedby="Email Address" aria-label="Email Address" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="preferredRole" class="form-label">Preferred Role:</label>
+            <input id="preferredRole" name="preferredRole" type="Text" class="form-control"
+                   aria-describedby="Preferred Role" aria-label="Preferred Role" required>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button id="formModalCancel" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button id="formModalSubmit" type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripting Section -->
+<script src="./scripts/events.js"></script>
+<script src="./scripts/app.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
