@@ -1,0 +1,16 @@
+{
+ "users" : [
+ {
+   "DisplayName" : "Brandon Sanderson",
+   "EmailAddress": "brandonSanderson@gmail.com ",
+   "username": "brandonSanderson",
+   "password": "stormlight"
+ },
+ {
+   "DisplayName" : "max",
+   "EmailAddress": "max@gmail.com",
+   "username": "max",
+   "password": "1234"
+ }
+   ]
+}

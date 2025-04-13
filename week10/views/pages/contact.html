@@ -1,0 +1,54 @@
+
+<h1 class="mb-5">
+  Contact Info
+</h1>
+
+<form class="col-lg-6 col-md-10 col-sm-12 mb-4">
+  
+  <div class="mb-3 input-group">
+    <label for="fullName"class="input-group-text">Full Name: </label>
+    <input id="fullName" name="fullName" type="text" class="form-control"  
+    aria-describedby="Full Name" aria-label="Full Name" required />
+    <span id="fullName-error" class="text-danger"></span>
+  </div>
+
+  <div class="mb-3 input-group">
+    <label for="contactNumber" class="input-group-text">Contact Number: </label>
+    <input id="contactNumber" name="contactNumber" type="tel" 
+    class="form-control" aria-describedby="Contact Number" aria-label="Contact Number" required >
+    <span id="contactNumber-error" class="text-danger"></span>
+
+  </div>
+
+  <div class="mb-3 input-group">
+    <label for="emailAddress" class="input-group-text">Email:</label>
+    <input id="emailAddress" name="emailAddress" type="email" 
+    class="form-control" aria-describedby="Email Address" aria-label="Email Address" required >
+    <span id="emailAddress-error" class="text-danger"></span>
+
+  </div>
+
+  <div class="mb-3 ">
+    <span class="input-group-text">Message:&nbsp;
+    <textarea id="message" name="message" 
+      class="form-control" aria-describedby="Message Area" aria-label="Message Area" ></textarea>
+  </span>
+  </div>
+
+  <div class="mb-3 input-group">
+    <label class="form-check-label" for="subscribeCheckbox"> Subscribe to our contact list: &nbsp</label>
+      <input id="subscribeCheckbox" name="subscribeCheckbox" type="checkbox" 
+    class=" input me-4" aria-describedby="Email Address" aria-label="Email Address" >
+  </div>
+
+  <button id="sendButton" type="submit" class="btn btn-primary"><i class="fa-solid fa-check"></i> Submit</button>
+  <button id="cancelButton" type="reset" class="btn btn-warning"><i class="fa-solid fa-ban"></i> Cancel</button>
+</form>
+
+<div class="col-lg-4 col-m-6">
+  <button id="contactListButton" class="btn btn-outline-primary">
+    <i class="fa-regular fa-envelope"></i> Show Contact List
+  </button>
+
+</div>
+

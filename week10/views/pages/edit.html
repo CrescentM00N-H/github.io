@@ -1,0 +1,30 @@
+
+  <h1 class="mb-5">
+    Edit Contact
+  </h1>
+
+  <form class="col-lg-6 col-md-10 col-sm-12 mb-4">
+    <div class="mb-3 input-group">
+      <label for="fullName"class="input-group-text">Full Name: </label>
+        <input id="fullName" name="fullName" type="text" class="form-control"  
+        aria-describedby="Full Name" aria-label="Full Name" required />
+        <span id="fullName-error" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3 input-group">
+      <label for="contactNumber" class="input-group-text">Contact Number: </label>
+      <input id="contactNumber" name="contactNumber" type="tel" 
+      class="form-control" aria-describedby="Contact Number" aria-label="Contact Number" required >
+      <span id="contactNumber-error" class="text-danger"></span>
+    </div>
+    
+    <div class="mb-3 input-group">
+      <label for="emailAddress" class="input-group-text">Email:</label>
+      <input id="emailAddress" name="emailAddress" type="email" 
+      class="form-control" aria-describedby="Email Address" aria-label="Email Address" required >
+      <span id="emailAddress-error" class="text-danger"></span>
+    </div>
+
+    <button id="editButton" type="submit" class="btn btn-primary"><i class="fa-regular fa-pen-to-square"></i> Edit</button>
+    <button id="cancelButton" type="reset" class="btn btn-warning"><i class="fa-solid fa-ban"></i> Cancel</button>
+  </form>

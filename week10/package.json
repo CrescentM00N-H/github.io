@@ -1,0 +1,29 @@
+{
+  "name": "week1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Max Dinsmore",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "express": "^5.1.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.1",
+    "nodemon": "^3.1.9",
+    "rimraf": "^6.0.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server/server.js",
+    "clean": "rimraf dist",
+    "clean-build": "npm run clean && npm run build",
+    "dev": "npm run build && npm run start",
+    "watch": "tsc --watch",
+    "start:dev": "nodemon dist/server/server.js"
+  }
+}
